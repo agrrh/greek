@@ -1,6 +1,4 @@
-# Greek
-
-![](assets/logo.png)
+# ![logo-64](assets/logo-64.png) Greek
 
 ## Info
 
