@@ -22,30 +22,7 @@ Think of it as [service catalog](https://en.wikipedia.org/wiki/Service_catalog),
 
 ## Roadmap
 
-### Phase 1: Idea
-
-Share a view.
-
-- [ ] UI: Static sample
-- [ ] Specs: Service v1
-
-### Phase 2: Prototype
-
-Make it move.
-
-- [ ] Service: Sample service
-- [ ] API: Local storage
-- [ ] API: Simple CRUD by name
-- [ ] Watcher: Git
-- [ ] Watcher: Google Spreadsheets
-- [ ] Agent: Status
-- [ ] UI: API integration
-
-### Phase 3: Grow
-
-Develop a success.
-
-- [ ] Plan: Future steps
+Moved to [Trello board](https://trello.com/b/Xww1m2DX) [RU].
 
 ## Naming
 
