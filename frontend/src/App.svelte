@@ -1,21 +1,21 @@
 <script>
   import Header from './lib/Header.svelte'
-  import Panel from './lib/Panel.svelte'
+  import Menu from './lib/Menu.svelte'
   import Workspace from './lib/Workspace.svelte'
 </script>
 
-<div class="columns">
-  <div class="column" id="header">
+<section class="columns">
+  <section class="column has-text-light has-background-black" id="header">
     <Header />
-  </div>
-</div>
+  </section>
+</section>
 
-<div class="columns">
-  <div class="column is-one-fifth" id="panel">
-    <Panel />
-  </div>
+<section class="columns">
+  <section class="column is-one-fifth has-text-light has-background-dark" id="panel">
+    <Menu />
+  </section>
 
-  <div class="column" id="workspace">
+  <section class="column has-text-dark has-background-white" id="workspace">
     <Workspace />
-  </div>
-</div>
+  </section>
+</section>
