@@ -1,9 +1,11 @@
-<main class="hero is-fullheight">
-  <section class="content">
-    <h1>Workspace</h1>
+<script>
+  import Teams from './Teams.svelte'
+</script>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </section>
+<main class="hero is-fullheight">
+  <div class="section">
+    <div class="content">
+      <Teams />
+    </div>
+  </div>
 </main>

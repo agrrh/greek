@@ -1,11 +1,11 @@
-<aside class="menu">
+<aside class="menu pt-1 pr-2 pb-4 pl-4">
   <p class="menu-label">
     Menu
   </p>
 
   <ul class="menu-list">
     <li>
-      <a class="is-active" href="#!">
+      <a class="" href="#!">
         <span class="icon is-medium">
           <i class="fas fa-chart-pie"></i>
         </span>
@@ -14,7 +14,7 @@
     </li>
 
     <li>
-      <a href="#!">
+      <a class="is-active" href="#!">
         <span class="icon is-medium">
           <i class="fas fa-people-group"></i>
         </span>
@@ -23,7 +23,7 @@
     </li>
 
     <li>
-      <a href="#!">
+      <a class="" href="#!">
         <span class="icon is-medium">
           <i class="fas fa-file-code"></i>
         </span>
@@ -34,19 +34,19 @@
 </aside>
 
 <style>
-aside.menu {
-  padding: 20px 20px 50px 20px;
-}
-
 aside li a {
   color: #aaa;
 }
 
 aside li a {
-  color: #fff;
+  color: #eee;
 }
 
 aside li a:hover {
   color: #333;
+}
+
+aside li a.is-active:hover {
+  color: #fff;
 }
 </style>
