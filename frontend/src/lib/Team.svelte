@@ -8,7 +8,7 @@
   <thead>
     <tr>
       <th>Service Name</th>
-      <th>Statuses</th>
+      <th>Badges</th>
     </tr>
   </thead>
 
