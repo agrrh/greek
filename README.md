@@ -10,13 +10,64 @@ Think of it as [service catalog](https://en.wikipedia.org/wiki/Service_catalog),
 
 ## Design
 
-![](./assets/greek.drawio.png)
+```mermaid
+graph TD
+  actor[Actor]
 
-- **Database** - actual data storage
+  subgraph core
+    ui[UI]
+    api[REST API]
+  end
 
-- **API** - serves as programmatic interface for database
+  subgraph data
+    db[(Database)]
+    cache[(Cache)]
+  end
 
-- **Watchers** - these are crawlers, they just keep service specs synchronized from desired data source
+  subgraph data-sources[Data Sources]
+    url[(URL)]
+    github[(GitHub)]
+    kubernetes[(k8s CRDs)]
+  end
+
+  subgraph collectors[Collectors]
+    raw
+    git
+    kube
+  end
+
+  url -.-|query| raw
+  github -.-|query| git
+  kubernetes -.-|query| kube
+
+  subgraph services[Services Resources]
+    svc-foo[Service Foo]
+    svc-bar-image[docker/svc/bar]
+  end
+
+  subgraph agents[Agents]
+    status[Status]
+    vulners[Vulners]
+  end
+
+  svc-foo -.-|query| status
+  svc-bar-image -.-|query| vulners
+
+  actor --> ui
+  ui --> api
+
+  api --> db
+  api --> cache
+
+  raw --> api
+  git --> api
+  kube --> api
+
+  status --> api
+  vulners --> api
+```
+
+- **Collectors** - these are watchers, they keep service specs synchronized from desired data source
 
 - **Agents** - proxy processes to gather data from third-party systems (e.g. metrics, logs, security scanners, ...) and thus provide additional data for UI dashboards
 
