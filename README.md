@@ -14,7 +14,7 @@ Think of it as [service catalog](https://en.wikipedia.org/wiki/Service_catalog),
 graph TD
   actor[Actor]
 
-  subgraph core
+  subgraph core[Core]
     ui[UI]
     api[REST API]
   end
