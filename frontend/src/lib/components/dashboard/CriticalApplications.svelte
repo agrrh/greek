@@ -29,22 +29,22 @@ data = [
 ]
 </script>
 
-<h1>Critical Services</h1>
+<h1>Critical Applications</h1>
 
 <table class="table is-hoverable">
 	<thead>
 		<tr>
-			<th>Service</th>
+			<th>Application</th>
 			<th>Status</th>
 			<th>Latest Deploy</th>
 		</tr>
 	</thead>
 	<tbody>
-		{#each data as service}
+		{#each data as application}
 		<tr>
-			<th><a href="/service/{service.name}">{service.name}</a></th>
-			<td>{service.status}</td>
-			<td>{JSON.stringify(service.latestDeploy)}</td>
+			<th><a href="/applications/{application.name}">{application.name}</a></th>
+			<td>{application.status}</td>
+			<td>{JSON.stringify(application.latestDeploy)}</td>
 		</tr>
 		{/each}
 	</tbody>

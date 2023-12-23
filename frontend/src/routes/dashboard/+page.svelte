@@ -1,6 +1,6 @@
 <script>
 	import Overview from '$lib/components/dashboard/Overview.svelte';
-	import CriticalServices from '$lib/components/dashboard/CriticalServices.svelte';
+	import CriticalApplications from '$lib/components/dashboard/CriticalApplications.svelte';
 </script>
 
 <div class="block">
@@ -8,5 +8,5 @@
 </div>
 
 <div class="block">
-	<CriticalServices />
+	<CriticalApplications />
 </div>

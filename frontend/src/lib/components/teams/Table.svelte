@@ -1,5 +1,5 @@
 <script>
-import ServicesCell from '$lib/components/teams/ServicesCell.svelte';
+import ApplicationsCell from '$lib/components/teams/ApplicationsCell.svelte';
 
 export let data = [];
 
@@ -19,7 +19,7 @@ function humanizeName(name) {
 	<thead>
 		<tr>
 			<th>Team</th>
-			<th>Services</th>
+			<th>Applications</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -27,7 +27,7 @@ function humanizeName(name) {
 		<tr>
 			<th><a href="/teams/{team.name}">{humanizeName(team.name)}</a></th>
 			<td>
-				<ServicesCell data={team.services} />
+				<ApplicationsCell data={team.applications} />
 			</td>
 		</tr>
 		{/each}

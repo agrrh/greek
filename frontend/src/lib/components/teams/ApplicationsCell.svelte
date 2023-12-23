@@ -16,10 +16,10 @@ const elementStatusIcons = [
 ];
 </script>
 
-{#each data as service}
-	<a class="button is-small {elementStatusClasses[service.status]} has-tooltip-arrow" href="/services/{service.name}" data-tooltip="{service.name}">
+{#each data as application}
+	<a class="button is-small {elementStatusClasses[application.status]} has-tooltip-arrow" href="/services/{application.name}" data-tooltip="{application.name}">
 		<span class="icon is-large">
-			<i class="{elementStatusIcons[service.status]}"></i>
+			<i class="{elementStatusIcons[application.status]}"></i>
 		</span>
 	</a>
 {/each}

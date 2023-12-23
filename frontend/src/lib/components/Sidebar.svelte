@@ -11,7 +11,8 @@
 	<p class="menu-label">Scopes</p>
 	<ul class="menu-list">
 		<li><a href="/teams/">Teams</a></li>
-		<li><a href="/services/">Services</a></li>
+		<li><a href="/projects/">Projects</a></li>
+		<li><a href="/applications/">Applications</a></li>
 	</ul>
 </aside>
 

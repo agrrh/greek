@@ -5,7 +5,7 @@
 	let teams = [
 		{
 			name: 'core-dev',
-			services: [
+			applications: [
 				{ name: 'cart', status: 1 },
 				{ name: 'prices-parser', status: 1 },
 				{ name: 'offers', status: 1 },
@@ -16,7 +16,7 @@
 		},
 		{
 			name: 'infrastructure',
-			services: [
+			applications: [
 				{ name: 'zenit', status: 1 },
 				{ name: 'spartak', status: 2 },
 				{ name: 'cska', status: 1 }
