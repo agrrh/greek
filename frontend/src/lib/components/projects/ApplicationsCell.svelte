@@ -17,7 +17,7 @@ const elementStatusIcons = [
 </script>
 
 {#each data as application}
-	<a class="button is-small {elementStatusClasses[application.status]} has-tooltip-arrow" href="/services/{application.name}" data-tooltip="{application.name}">
+	<a class="button is-small {elementStatusClasses[application.status]} has-tooltip-arrow" href="/applications/{application.name}" data-tooltip="{application.name}">
 		<span class="icon is-large">
 			<i class="{elementStatusIcons[application.status]}"></i>
 		</span>

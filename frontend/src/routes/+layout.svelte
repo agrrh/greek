@@ -5,7 +5,7 @@
 </script>
 
 <div class="columns">
-	<div class="column is-one-fifth has-background-black">
+	<div class="column is-2 has-background-black-bis">
 		<Sidebar />
 	</div>
 	<div class="column">
@@ -22,7 +22,7 @@
 <style>
 	div.columns {
 		margin: 0px;
-		min-height: 100vh;
+		min-height: 95vh;
 	}
 
 	div.section.content {

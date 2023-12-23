@@ -1,25 +1,56 @@
 <script>
 	import TeamsFilter from '$lib/components/ScopeFilter.svelte';
-	import TeamsTable from '$lib/components/teams/Table.svelte';
+	import TeamsCards from '$lib/components/teams/Cards.svelte';
 
 	let teams = [
 		{
 			name: 'core-dev',
-			applications: [
-				{ name: 'cart', status: 1 },
-				{ name: 'prices-parser', status: 1 },
-				{ name: 'offers', status: 1 },
-				{ name: 'customer-card', status: 0 },
-				{ name: 'auth', status: 2 },
-				{ name: 'mail-sender', status: 3 }
+			projects: [
+				{
+					name: 'cart',
+					applications: 1,
+					owners: [
+						"@d.fyodor",
+						"@k.matroskin",
+					],
+				},
+				{
+					name: 'prices-parser',
+					applications: 1,
+					owners: [
+						"@d.fyodor",
+						"@k.matroskin",
+					],
+				},
 			]
 		},
 		{
 			name: 'infrastructure',
-			applications: [
-				{ name: 'zenit', status: 1 },
-				{ name: 'spartak', status: 2 },
-				{ name: 'cska', status: 1 }
+			projects: [
+				{
+					name: 'core',
+					applications: 13,
+					owners: [
+						"@d.fyodor",
+						"@k.matroskin",
+					],
+				},
+				{
+					name: 'business-foo',
+					applications: 4,
+					owners: [
+						"@d.fyodor",
+						"@k.matroskin",
+					],
+				},
+				{
+					name: 'business-bar',
+					applications: 2,
+					owners: [
+						"@d.fyodor",
+						"@k.matroskin",
+					],
+				},
 			]
 		},
 	];
@@ -30,5 +61,5 @@
 </div>
 
 <div class="block">
-	<TeamsTable data={teams} />
+	<TeamsCards data={teams} />
 </div>

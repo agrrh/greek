@@ -1,5 +1,5 @@
 <script>
-	import Service from '$lib/components/services/Single.svelte';
+	import Project from '$lib/components/projects/Single.svelte';
 </script>
 
-<Service />
+<Project />

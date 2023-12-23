@@ -3,41 +3,33 @@ export let data = [];
 
 data = [
 	{
-		name: "offers",
-		status: 1,
-		latestDeploy: {
-			dt: 1703310383,
-			author: "@p.ivanov",
-		},
-	},
-	{
-		name: "auth",
-		status: 3,
+		name: "infrastructure",
+		deliveries: 15,
 		latestDeploy: {
 			dt: 1703314383,
-			author: "@a.petrov",
+			author: "@d.vasyanin",
 		},
 	},
 	{
-		name: "cart",
-		status: 1,
+		name: "core-dev",
+		deliveries: 10,
 		latestDeploy: {
-			dt: 1703312383,
-			author: "@a.petrov",
+			dt: 1703310383,
+			author: "@z.olegov",
 		},
 	},
 ]
 </script>
 
-<h1>Critical Applications</h1>
+<h1>Top Delivering Teams</h1>
 
-<p>Latest critical applications updates, up to 5.</p>
+<p>Top teams with most frequent deliveries.</p>
 
 <table class="table is-hoverable">
 	<thead>
 		<tr>
-			<th>Application</th>
-			<th>Status</th>
+			<th>Team</th>
+			<th>Deliveries in 5 days</th>
 			<th>Latest Deploy</th>
 		</tr>
 	</thead>
@@ -45,7 +37,7 @@ data = [
 		{#each data as application}
 		<tr>
 			<th><a href="/applications/{application.name}">{application.name}</a></th>
-			<td>{application.status}</td>
+			<td>{application.deliveries}</td>
 			<td>{(Math.round(Date.now() / 1000) - application.latestDeploy.dt)} seconds ago by {application.latestDeploy.author}</td>
 		</tr>
 		{/each}
